@@ -1,3 +1,4 @@
+<!-- Contact Page -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,40 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Aidan Pacheco</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Center the content on all pages */
+        section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 70vh; /* Center content vertically */
+            text-align: center; /* Center text horizontally */
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #121212;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Contact Me</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <h1>Contact Me</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<section id="contact">
+    <h2>Get in Touch</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
 
-    <section id="contact">
-        <h2>Get in Touch</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
-
-            <button type="submit">Submit</button>
-        </form>
-        <p>Email: <a href=\"mailto:aidanrpacheco@gmail.com\">aidanrpacheco@gmail.com</a></p>
-        <p>Phone: <a href=\"tel:+447395537469\">+447395537469</a></p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Aidan Pacheco. All rights reserved.</p>
-    </footer>
+        <button type="submit">Submit</button>
+    </form>
+    <p>Email: <a href="mailto:aidanrpacheco@gmail.com">aidanrpacheco@gmail.com</a></p>
+    <p>Phone: <a href="tel:+447395537469">+447395537469</a></p>
+</section>
+<footer>
+    <p>&copy; 2025 Aidan Pacheco. All rights reserved.</p>
+</footer>
 </body>
 </html>
